@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		474B1D8518FD2EEE0004EB30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B1D8418FD2EEE0004EB30 /* Foundation.framework */; };
+		474B1D8718FD2EEE0004EB30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B1D8618FD2EEE0004EB30 /* CoreGraphics.framework */; };
+		474B1D8918FD2EEE0004EB30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B1D8818FD2EEE0004EB30 /* UIKit.framework */; };
+		474B1D8B18FD2EEE0004EB30 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B1D8A18FD2EEE0004EB30 /* SpriteKit.framework */; };
+		474B1D9118FD2EEE0004EB30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 474B1D8F18FD2EEE0004EB30 /* InfoPlist.strings */; };
+		474B1D9318FD2EEE0004EB30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 474B1D9218FD2EEE0004EB30 /* main.m */; };
+		474B1D9718FD2EEE0004EB30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 474B1D9618FD2EEE0004EB30 /* AppDelegate.m */; };
+		474B1D9A18FD2EEE0004EB30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474B1D9818FD2EEE0004EB30 /* Main.storyboard */; };
+		474B1DA418FD2EEE0004EB30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474B1DA318FD2EEE0004EB30 /* Images.xcassets */; };
+		474B1DAB18FD2EEE0004EB30 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B1DAA18FD2EEE0004EB30 /* XCTest.framework */; };
+		474B1DAC18FD2EEE0004EB30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B1D8418FD2EEE0004EB30 /* Foundation.framework */; };
+		474B1DAD18FD2EEE0004EB30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B1D8818FD2EEE0004EB30 /* UIKit.framework */; };
+		474B1DB518FD2EEE0004EB30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 474B1DB318FD2EEE0004EB30 /* InfoPlist.strings */; };
+		474B1DB718FD2EEE0004EB30 /* ShootDownAirplane2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 474B1DB618FD2EEE0004EB30 /* ShootDownAirplane2Tests.m */; };
+		474B1DC218FD2F270004EB30 /* SKFoePlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 474B1DC118FD2F270004EB30 /* SKFoePlane.m */; };
+		474B1DC518FD2F3B0004EB30 /* SKMainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 474B1DC418FD2F3B0004EB30 /* SKMainScene.m */; };
+		474B1DC818FD2F5B0004EB30 /* SKSharedAtles.m in Sources */ = {isa = PBXBuildFile; fileRef = 474B1DC718FD2F5B0004EB30 /* SKSharedAtles.m */; };
+		474B1DCB18FD2F6E0004EB30 /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474B1DCA18FD2F6E0004EB30 /* SKViewController.m */; };
+		4764A18918FE6A6B0002AFB8 /* bullet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4764A17E18FE6A6B0002AFB8 /* bullet.mp3 */; };
+		4764A18A18FE6A6B0002AFB8 /* BurstAircraftPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 4764A17F18FE6A6B0002AFB8 /* BurstAircraftPause.png */; };
+		4764A18B18FE6A6B0002AFB8 /* BurstAircraftPause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18018FE6A6B0002AFB8 /* BurstAircraftPause@2x.png */; };
+		4764A18C18FE6A6B0002AFB8 /* enemy1_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18118FE6A6B0002AFB8 /* enemy1_down.mp3 */; };
+		4764A18D18FE6A6B0002AFB8 /* enemy2_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18218FE6A6B0002AFB8 /* enemy2_down.mp3 */; };
+		4764A18E18FE6A6B0002AFB8 /* enemy2_out.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18318FE6A6B0002AFB8 /* enemy2_out.mp3 */; };
+		4764A18F18FE6A6B0002AFB8 /* enemy3_down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18418FE6A6B0002AFB8 /* enemy3_down.mp3 */; };
+		4764A19018FE6A6B0002AFB8 /* game_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18518FE6A6B0002AFB8 /* game_music.mp3 */; };
+		4764A19118FE6A6B0002AFB8 /* game_over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18618FE6A6B0002AFB8 /* game_over.mp3 */; };
+		4764A19218FE6A6B0002AFB8 /* gameArts-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18718FE6A6B0002AFB8 /* gameArts-hd.plist */; };
+		4764A19318FE6A6B0002AFB8 /* gameArts-hd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4764A18818FE6A6B0002AFB8 /* gameArts-hd@2x.png */; };
+		47C6C095190ED4A000DFB8BE /* SKGameStartingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C6C094190ED4A000DFB8BE /* SKGameStartingScene.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		474B1DAE18FD2EEE0004EB30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 474B1D7918FD2EEE0004EB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 474B1D8018FD2EEE0004EB30;
+			remoteInfo = ShootDownAirplane2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		474B1D8118FD2EEE0004EB30 /* ShootDownAirplane2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootDownAirplane2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		474B1D8418FD2EEE0004EB30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		474B1D8618FD2EEE0004EB30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		474B1D8818FD2EEE0004EB30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		474B1D8A18FD2EEE0004EB30 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		474B1D8E18FD2EEE0004EB30 /* ShootDownAirplane2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShootDownAirplane2-Info.plist"; sourceTree = "<group>"; };
+		474B1D9018FD2EEE0004EB30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		474B1D9218FD2EEE0004EB30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		474B1D9418FD2EEE0004EB30 /* ShootDownAirplane2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShootDownAirplane2-Prefix.pch"; sourceTree = "<group>"; };
+		474B1D9518FD2EEE0004EB30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		474B1D9618FD2EEE0004EB30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		474B1D9918FD2EEE0004EB30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		474B1DA318FD2EEE0004EB30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		474B1DA918FD2EEE0004EB30 /* ShootDownAirplane2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShootDownAirplane2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		474B1DAA18FD2EEE0004EB30 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		474B1DB218FD2EEE0004EB30 /* ShootDownAirplane2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShootDownAirplane2Tests-Info.plist"; sourceTree = "<group>"; };
+		474B1DB418FD2EEE0004EB30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		474B1DB618FD2EEE0004EB30 /* ShootDownAirplane2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShootDownAirplane2Tests.m; sourceTree = "<group>"; };
+		474B1DC018FD2F270004EB30 /* SKFoePlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFoePlane.h; sourceTree = "<group>"; };
+		474B1DC118FD2F270004EB30 /* SKFoePlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFoePlane.m; sourceTree = "<group>"; };
+		474B1DC318FD2F3B0004EB30 /* SKMainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMainScene.h; sourceTree = "<group>"; };
+		474B1DC418FD2F3B0004EB30 /* SKMainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMainScene.m; sourceTree = "<group>"; };
+		474B1DC618FD2F5B0004EB30 /* SKSharedAtles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSharedAtles.h; sourceTree = "<group>"; };
+		474B1DC718FD2F5B0004EB30 /* SKSharedAtles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSharedAtles.m; sourceTree = "<group>"; };
+		474B1DC918FD2F6E0004EB30 /* SKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKViewController.h; sourceTree = "<group>"; };
+		474B1DCA18FD2F6E0004EB30 /* SKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKViewController.m; sourceTree = "<group>"; };
+		4764A17E18FE6A6B0002AFB8 /* bullet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullet.mp3; sourceTree = "<group>"; };
+		4764A17F18FE6A6B0002AFB8 /* BurstAircraftPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurstAircraftPause.png; sourceTree = "<group>"; };
+		4764A18018FE6A6B0002AFB8 /* BurstAircraftPause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BurstAircraftPause@2x.png"; sourceTree = "<group>"; };
+		4764A18118FE6A6B0002AFB8 /* enemy1_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enemy1_down.mp3; sourceTree = "<group>"; };
+		4764A18218FE6A6B0002AFB8 /* enemy2_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enemy2_down.mp3; sourceTree = "<group>"; };
+		4764A18318FE6A6B0002AFB8 /* enemy2_out.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enemy2_out.mp3; sourceTree = "<group>"; };
+		4764A18418FE6A6B0002AFB8 /* enemy3_down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enemy3_down.mp3; sourceTree = "<group>"; };
+		4764A18518FE6A6B0002AFB8 /* game_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_music.mp3; sourceTree = "<group>"; };
+		4764A18618FE6A6B0002AFB8 /* game_over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_over.mp3; sourceTree = "<group>"; };
+		4764A18718FE6A6B0002AFB8 /* gameArts-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "gameArts-hd.plist"; sourceTree = "<group>"; };
+		4764A18818FE6A6B0002AFB8 /* gameArts-hd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameArts-hd@2x.png"; sourceTree = "<group>"; };
+		47C6C093190ED4A000DFB8BE /* SKGameStartingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGameStartingScene.h; sourceTree = "<group>"; };
+		47C6C094190ED4A000DFB8BE /* SKGameStartingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGameStartingScene.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		474B1D7E18FD2EEE0004EB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474B1D8718FD2EEE0004EB30 /* CoreGraphics.framework in Frameworks */,
+				474B1D8918FD2EEE0004EB30 /* UIKit.framework in Frameworks */,
+				474B1D8B18FD2EEE0004EB30 /* SpriteKit.framework in Frameworks */,
+				474B1D8518FD2EEE0004EB30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474B1DA618FD2EEE0004EB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474B1DAB18FD2EEE0004EB30 /* XCTest.framework in Frameworks */,
+				474B1DAD18FD2EEE0004EB30 /* UIKit.framework in Frameworks */,
+				474B1DAC18FD2EEE0004EB30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		474B1D7818FD2EEE0004EB30 = {
+			isa = PBXGroup;
+			children = (
+				474B1D8C18FD2EEE0004EB30 /* ShootDownAirplane2 */,
+				474B1DB018FD2EEE0004EB30 /* ShootDownAirplane2Tests */,
+				474B1D8318FD2EEE0004EB30 /* Frameworks */,
+				474B1D8218FD2EEE0004EB30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		474B1D8218FD2EEE0004EB30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				474B1D8118FD2EEE0004EB30 /* ShootDownAirplane2.app */,
+				474B1DA918FD2EEE0004EB30 /* ShootDownAirplane2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		474B1D8318FD2EEE0004EB30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				474B1D8418FD2EEE0004EB30 /* Foundation.framework */,
+				474B1D8618FD2EEE0004EB30 /* CoreGraphics.framework */,
+				474B1D8818FD2EEE0004EB30 /* UIKit.framework */,
+				474B1D8A18FD2EEE0004EB30 /* SpriteKit.framework */,
+				474B1DAA18FD2EEE0004EB30 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		474B1D8C18FD2EEE0004EB30 /* ShootDownAirplane2 */ = {
+			isa = PBXGroup;
+			children = (
+				4764A17D18FE6A6B0002AFB8 /* Resources */,
+				474B1D9518FD2EEE0004EB30 /* AppDelegate.h */,
+				474B1D9618FD2EEE0004EB30 /* AppDelegate.m */,
+				474B1D9818FD2EEE0004EB30 /* Main.storyboard */,
+				474B1DC018FD2F270004EB30 /* SKFoePlane.h */,
+				474B1DC118FD2F270004EB30 /* SKFoePlane.m */,
+				474B1DC618FD2F5B0004EB30 /* SKSharedAtles.h */,
+				474B1DC718FD2F5B0004EB30 /* SKSharedAtles.m */,
+				474B1DC318FD2F3B0004EB30 /* SKMainScene.h */,
+				474B1DC418FD2F3B0004EB30 /* SKMainScene.m */,
+				47C6C093190ED4A000DFB8BE /* SKGameStartingScene.h */,
+				47C6C094190ED4A000DFB8BE /* SKGameStartingScene.m */,
+				474B1DC918FD2F6E0004EB30 /* SKViewController.h */,
+				474B1DCA18FD2F6E0004EB30 /* SKViewController.m */,
+				474B1DA318FD2EEE0004EB30 /* Images.xcassets */,
+				474B1D8D18FD2EEE0004EB30 /* Supporting Files */,
+			);
+			path = ShootDownAirplane2;
+			sourceTree = "<group>";
+		};
+		474B1D8D18FD2EEE0004EB30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				474B1D8E18FD2EEE0004EB30 /* ShootDownAirplane2-Info.plist */,
+				474B1D8F18FD2EEE0004EB30 /* InfoPlist.strings */,
+				474B1D9218FD2EEE0004EB30 /* main.m */,
+				474B1D9418FD2EEE0004EB30 /* ShootDownAirplane2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		474B1DB018FD2EEE0004EB30 /* ShootDownAirplane2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				474B1DB618FD2EEE0004EB30 /* ShootDownAirplane2Tests.m */,
+				474B1DB118FD2EEE0004EB30 /* Supporting Files */,
+			);
+			path = ShootDownAirplane2Tests;
+			sourceTree = "<group>";
+		};
+		474B1DB118FD2EEE0004EB30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				474B1DB218FD2EEE0004EB30 /* ShootDownAirplane2Tests-Info.plist */,
+				474B1DB318FD2EEE0004EB30 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4764A17D18FE6A6B0002AFB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4764A17E18FE6A6B0002AFB8 /* bullet.mp3 */,
+				4764A17F18FE6A6B0002AFB8 /* BurstAircraftPause.png */,
+				4764A18018FE6A6B0002AFB8 /* BurstAircraftPause@2x.png */,
+				4764A18118FE6A6B0002AFB8 /* enemy1_down.mp3 */,
+				4764A18218FE6A6B0002AFB8 /* enemy2_down.mp3 */,
+				4764A18318FE6A6B0002AFB8 /* enemy2_out.mp3 */,
+				4764A18418FE6A6B0002AFB8 /* enemy3_down.mp3 */,
+				4764A18518FE6A6B0002AFB8 /* game_music.mp3 */,
+				4764A18618FE6A6B0002AFB8 /* game_over.mp3 */,
+				4764A18718FE6A6B0002AFB8 /* gameArts-hd.plist */,
+				4764A18818FE6A6B0002AFB8 /* gameArts-hd@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		474B1D8018FD2EEE0004EB30 /* ShootDownAirplane2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 474B1DBA18FD2EEE0004EB30 /* Build configuration list for PBXNativeTarget "ShootDownAirplane2" */;
+			buildPhases = (
+				474B1D7D18FD2EEE0004EB30 /* Sources */,
+				474B1D7E18FD2EEE0004EB30 /* Frameworks */,
+				474B1D7F18FD2EEE0004EB30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShootDownAirplane2;
+			productName = ShootDownAirplane2;
+			productReference = 474B1D8118FD2EEE0004EB30 /* ShootDownAirplane2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		474B1DA818FD2EEE0004EB30 /* ShootDownAirplane2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 474B1DBD18FD2EEE0004EB30 /* Build configuration list for PBXNativeTarget "ShootDownAirplane2Tests" */;
+			buildPhases = (
+				474B1DA518FD2EEE0004EB30 /* Sources */,
+				474B1DA618FD2EEE0004EB30 /* Frameworks */,
+				474B1DA718FD2EEE0004EB30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				474B1DAF18FD2EEE0004EB30 /* PBXTargetDependency */,
+			);
+			name = ShootDownAirplane2Tests;
+			productName = ShootDownAirplane2Tests;
+			productReference = 474B1DA918FD2EEE0004EB30 /* ShootDownAirplane2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		474B1D7918FD2EEE0004EB30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "刘明";
+				TargetAttributes = {
+					474B1DA818FD2EEE0004EB30 = {
+						TestTargetID = 474B1D8018FD2EEE0004EB30;
+					};
+				};
+			};
+			buildConfigurationList = 474B1D7C18FD2EEE0004EB30 /* Build configuration list for PBXProject "ShootDownAirplane2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 474B1D7818FD2EEE0004EB30;
+			productRefGroup = 474B1D8218FD2EEE0004EB30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				474B1D8018FD2EEE0004EB30 /* ShootDownAirplane2 */,
+				474B1DA818FD2EEE0004EB30 /* ShootDownAirplane2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		474B1D7F18FD2EEE0004EB30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4764A18B18FE6A6B0002AFB8 /* BurstAircraftPause@2x.png in Resources */,
+				4764A18F18FE6A6B0002AFB8 /* enemy3_down.mp3 in Resources */,
+				4764A18918FE6A6B0002AFB8 /* bullet.mp3 in Resources */,
+				4764A18C18FE6A6B0002AFB8 /* enemy1_down.mp3 in Resources */,
+				4764A19318FE6A6B0002AFB8 /* gameArts-hd@2x.png in Resources */,
+				474B1D9118FD2EEE0004EB30 /* InfoPlist.strings in Resources */,
+				4764A19018FE6A6B0002AFB8 /* game_music.mp3 in Resources */,
+				4764A18E18FE6A6B0002AFB8 /* enemy2_out.mp3 in Resources */,
+				4764A19218FE6A6B0002AFB8 /* gameArts-hd.plist in Resources */,
+				4764A18D18FE6A6B0002AFB8 /* enemy2_down.mp3 in Resources */,
+				4764A19118FE6A6B0002AFB8 /* game_over.mp3 in Resources */,
+				474B1DA418FD2EEE0004EB30 /* Images.xcassets in Resources */,
+				474B1D9A18FD2EEE0004EB30 /* Main.storyboard in Resources */,
+				4764A18A18FE6A6B0002AFB8 /* BurstAircraftPause.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474B1DA718FD2EEE0004EB30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474B1DB518FD2EEE0004EB30 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		474B1D7D18FD2EEE0004EB30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474B1DC218FD2F270004EB30 /* SKFoePlane.m in Sources */,
+				474B1DC818FD2F5B0004EB30 /* SKSharedAtles.m in Sources */,
+				474B1DC518FD2F3B0004EB30 /* SKMainScene.m in Sources */,
+				474B1D9718FD2EEE0004EB30 /* AppDelegate.m in Sources */,
+				474B1DCB18FD2F6E0004EB30 /* SKViewController.m in Sources */,
+				474B1D9318FD2EEE0004EB30 /* main.m in Sources */,
+				47C6C095190ED4A000DFB8BE /* SKGameStartingScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474B1DA518FD2EEE0004EB30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474B1DB718FD2EEE0004EB30 /* ShootDownAirplane2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		474B1DAF18FD2EEE0004EB30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 474B1D8018FD2EEE0004EB30 /* ShootDownAirplane2 */;
+			targetProxy = 474B1DAE18FD2EEE0004EB30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		474B1D8F18FD2EEE0004EB30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				474B1D9018FD2EEE0004EB30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		474B1D9818FD2EEE0004EB30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				474B1D9918FD2EEE0004EB30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		474B1DB318FD2EEE0004EB30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				474B1DB418FD2EEE0004EB30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		474B1DB818FD2EEE0004EB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		474B1DB918FD2EEE0004EB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		474B1DBB18FD2EEE0004EB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShootDownAirplane2/ShootDownAirplane2-Prefix.pch";
+				INFOPLIST_FILE = "ShootDownAirplane2/ShootDownAirplane2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		474B1DBC18FD2EEE0004EB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShootDownAirplane2/ShootDownAirplane2-Prefix.pch";
+				INFOPLIST_FILE = "ShootDownAirplane2/ShootDownAirplane2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		474B1DBE18FD2EEE0004EB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShootDownAirplane2.app/ShootDownAirplane2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShootDownAirplane2/ShootDownAirplane2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShootDownAirplane2Tests/ShootDownAirplane2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		474B1DBF18FD2EEE0004EB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShootDownAirplane2.app/ShootDownAirplane2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShootDownAirplane2/ShootDownAirplane2-Prefix.pch";
+				INFOPLIST_FILE = "ShootDownAirplane2Tests/ShootDownAirplane2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		474B1D7C18FD2EEE0004EB30 /* Build configuration list for PBXProject "ShootDownAirplane2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474B1DB818FD2EEE0004EB30 /* Debug */,
+				474B1DB918FD2EEE0004EB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		474B1DBA18FD2EEE0004EB30 /* Build configuration list for PBXNativeTarget "ShootDownAirplane2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474B1DBB18FD2EEE0004EB30 /* Debug */,
+				474B1DBC18FD2EEE0004EB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		474B1DBD18FD2EEE0004EB30 /* Build configuration list for PBXNativeTarget "ShootDownAirplane2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474B1DBE18FD2EEE0004EB30 /* Debug */,
+				474B1DBF18FD2EEE0004EB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 474B1D7918FD2EEE0004EB30 /* Project object */;
+}
